@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
       - name: node-app
-        image: ajay542/node-app:1.0
+        image: ajay542/locoapp:1.0
         ports:
-        - containerPort: 3000
+        - containerPort: 80
         resources:
           limits:
             cpu: "500m"
@@ -35,6 +35,6 @@ spec:
     app: node-app
   ports:
     - port: 80
-      targetPort: 3000  
+      targetPort: 80  
 
 
